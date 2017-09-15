@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+}
+.wallpaper {
+  height: 400px;
+  background-image: url("./wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  background-color: #1d1d1d;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+}
+
+@media screen and (max-width: 991px) {
+  img.logo {
+    width: 100%;
+  }
+}
