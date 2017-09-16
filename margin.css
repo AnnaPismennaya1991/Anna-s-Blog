@@ -3,7 +3,7 @@ body {
 }
 .wallpaper {
   height: 400px;
-  background-image: url("./wallpaper.jpg");
+  background-image: url("./assets/wall.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,10 +17,49 @@ body {
   margin: 0;
   padding: 0;
   height: 90px;
+  display: flex;
+}
+
+.menu > div {
+  flex: 1;
+  display: flex;
+  padding: 0 25px;
+  align-items: center;
+}
+
+.menu > div .menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu > div .menu-container:hover svg,
+.menu > div .menu-container:hover span,
+.menu .search svg:hover {
+  fill: #E36977;
+  color: #E36977;
+}
+
+.menu > div svg {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.menu .search {
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 991px) {
   img.logo {
     width: 100%;
   }
+}
+
+.burger span {
+  color: white;
+  font-size: 30px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: .2s;
 }
